@@ -6,8 +6,63 @@
     <link href="./output.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <h1 class="text-sky-600 font-lateef-bold">سلاام دنیا</h1>
+<body class="font-lateef-regular">
+    <!-- Header  Section-->
+     <div class="h-[50vh] lg:h-screen bg-gradient-to-t from-indigo-200">
+        <nav class="bg-white w-full fixed">
+            <div class="container mx-auto py-5 flex justify-between items-center">
+               <div class="flex items-center justify-center gap-1">
+                <img class="w-5" src="../img/logo.png" alt="">
+                <span class="font-Caprasimo-Regular text-2xl text-indigo-900">Portfolio </span>
+               </div>
+               <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm text-xl">  
+                    <li class="hover:text-gray-500">
+                        <a href="#">ارتباط</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">شغل ها</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">خدمات</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">درباره من</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#">خانه</a>
+                    </li>
+               </ul>
+               <img class="w-5 cursor-pointer hidden md:block" src="../img/moon.png" alt="">
+               <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+               </div>
+
+               <ul id="menu" class="hidden bg-indigo-900 absolute top-0 left-0 w-full p-10 rounded-b-2xl space-y-7 text-white text-center text-1xl md:hidden font-semibold">  
+                <li class="hover:text-gray-500 duration-300">
+                    <a href="#">ارتباط</a>
+                </li>
+                <li class="hover:text-gray-500 duration-300">
+                    <a href="#">شغل ها</a>
+                </li>
+                <li class="hover:text-gray-500 duration-300">
+                    <a href="#">خدمات</a>
+                </li>
+                <li class="hover:text-gray-500 duration-300">
+                    <a href="#">درباره من</a>
+                </li>
+                <li class="hover:text-gray-500 duration-300">
+                    <a href="#">خانه</a>
+                </li>
+           </ul>
+                
+            </div>
+            
+        </nav>
+        
+     </div>
     
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -11,4 +11,8 @@
         font-family: 'lateef-bold';
         src: url('../fonts/Lateef-SemiBold.ttf');
     }
+    @font-face {
+        font-family: 'Caprasimo-Regular';
+        src: url('../fonts/Caprasimo-Regular.ttf');
+    }
 }

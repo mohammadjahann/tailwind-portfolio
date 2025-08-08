@@ -4,10 +4,13 @@
   theme: {
     fontFamily:{
       'lateef-regular':'lateef-regular',
-      'lateef-bold': 'lateef-bold'
+      'lateef-bold': 'lateef-bold',
+      'Caprasimo-Regular' : 'Caprasimo-Regular'
     },
     screens : {
-      'sm':'480px'
+      'sm':'480px',
+      'lg': '1024px',
+      'md': '768px'
     },
     extend: {},
   },
