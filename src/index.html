@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+ 
 </head>
 <body class="font-lateef-regular">
     
-     <div class="h-[60vh] lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+     <div class="min-h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden" id="home" id="home">
         <!-- Header  Section-->
         <nav class="z-10 bg-white w-full fixed">
             <div class="container mx-auto lg:py-5 flex justify-between items-center">
@@ -18,19 +24,19 @@
                </div>
                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm text-xl">  
                     <li class="hover:text-gray-500">
-                        <a href="#">ارتباط</a>
+                        <a href="#contact">ارتباط</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">شغل ها</a>
+                        <a href="#projects">شغل ها</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">خدمات</a>
+                        <a href="#services">خدمات</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">درباره من</a>
+                        <a href="#about">درباره من</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <a href="#">خانه</a>
+                        <a href="#home">خانه</a>
                     </li>
                </ul>
                <img class="w-5 cursor-pointer hidden md:block" src="../img/moon.png" alt="">
@@ -41,27 +47,27 @@
                </div>
 
                <ul id="menu" class="hidden bg-indigo-900 absolute top-0 left-0 w-full p-10 rounded-b-2xl space-y-7 text-white text-center text-1xl md:hidden font-semibold">  
-                <li class="hover:text-gray-500 duration-300">
-                    <a href="#">ارتباط</a>
+                <li id="hlink" class="hover:text-gray-500 duration-300">
+                    <a href="#contact">ارتباط</a>
                 </li>
-                <li class="hover:text-gray-500 duration-300">
-                    <a href="#">شغل ها</a>
+                <li id="hlink" class="hover:text-gray-500 duration-300">
+                    <a href="#projects">شغل ها</a>
                 </li>
-                <li class="hover:text-gray-500 duration-300">
-                    <a href="#">خدمات</a>
+                <li id="hlink" class="hover:text-gray-500 duration-300">
+                    <a href="#services">خدمات</a>
                 </li>
-                <li class="hover:text-gray-500 duration-300">
-                    <a href="#">درباره من</a>
+                <li id="hlink" class="hover:text-gray-500 duration-300">
+                    <a href="#about">درباره من</a>
                 </li>
-                <li class="hover:text-gray-500 duration-300">
-                    <a href="#">خانه</a>
+                <li id="hlink" class="hover:text-gray-500 duration-300">
+                    <a href="#home">خانه</a>
                 </li>
            </ul>
                 
             </div>
             
         </nav>
-
+        
         <!-- Hero section -->
          <!-- image -->
       <img class="absolute bottom-0 right-0 h-5/6 object-cover lg:left-0 mx-auto" src="../img/man.png" alt="">
@@ -80,7 +86,7 @@
      </div>
 
      <!-- About section -->
-     <div>
+     <div id="about" class="min-h-screen flex items-center">
         <div class="container mx-auto items-center py-40 gap-20 flex flex-col-reverse md:flex-row">
             <!-- Left -->
             <div class="relative w-full md:w-2/5 md:h-full">
@@ -113,7 +119,7 @@
      </div>
 
      <!-- Service Section -->
-      <div>
+      <div id="services" class="min-h-screen flex flex-col justify-center">
         <div class="container flex flex-col gap-6">
             <!-- Top -->
             <div class="flex flex-col items-center gap-3 text-center">
@@ -169,7 +175,7 @@
 
       <!-- Projects -->
 
-      <div class="mt-28">
+      <div id="projects" class="min-h-screen flex flex-col justify-center">
         <div class="container flex flex-col gap-6">
             <!-- Top -->
             <div class="flex flex-col items-center gap-3 text-center">
@@ -213,7 +219,7 @@
       </div>
 
       <!-- Contact -->
-       <div class="mt-20">
+       <div id="contact" class="min-h-screen flex flex-col justify-center"">
         <div class="container">
             <!-- top -->
             <div class="flex flex-col items-center gap-3 text-center">
@@ -242,7 +248,6 @@
                 <span class="font-Caprasimo-Regular text-sm lg:text-2xl text-white">Portfolio </span>
                </div>
                <span class="text-white text-2xl hidden md:block ">© 2025 Portfolio. Design with ♥️ by Jahan.</span>
-               <img class="w-5 cursor-pointer hidden md:block" src="../img/moon.png" alt="">
                <div class="flex gap-2">
                     <img class="w-4 cursor-pointer" src="../img/facebook.png">
                     <img class="w-4 cursor-pointer" src="../img/instagram.png">
